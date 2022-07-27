@@ -6,6 +6,7 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: rgba(184, 177, 177, 0.616);
 }
 
@@ -35,15 +36,18 @@ header > h1 {
 
 section {
     line-height: 2em;
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
-section.normal > p {
-    
+section.normal {
+    background-color: white;
 }
 
 section.imagem {
     background-color: rgb(77, 75, 75);
+    color: white;
 }
 
 footer {
