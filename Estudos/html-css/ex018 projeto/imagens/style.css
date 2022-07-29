@@ -50,20 +50,38 @@ header > h1 {
 section {
     line-height: 2em;
     padding-left: 30px;
-    padding-top: 10vh;
+    padding-top: 15vh;
     padding-bottom: 10vh;
     font-size: 3.5vw;
     font-family: var(--fonte1);
+    background-attachment: fixed;
 }
 
 section.normal {
     background-color: white;
 }
 
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.349);
+    max-width: 850px;
+    padding: 10px;
+}
+
 section.imagem {
     background-color: rgb(77, 75, 75);
     color: white;
 }
+
+section#img1 {
+    background-image: url(background001.jpg);
+    background-position: center right;
+}
+
+section#img2 {
+    background-image: url(background002.jpg);   
+    background-position: center;
+}   
 
 footer {
     background-color: black;
