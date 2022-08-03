@@ -13,10 +13,17 @@
         table {
             width: 300px;
             border-collapse: collapse;
+            position: relative; /* position relativa para congelar cabeçalho da tabela */
         }
 
         caption {
             padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky; /* Config de congelamento do cabeçalho da tabela stick = grudar*/
+            top: -1px;
+            background-color: black;
         }
 
         td , th {
@@ -27,7 +34,21 @@
         }
 
         th {
-            background-color: rgba(12, 12, 12, 0.192);
+            background-color: rgba(12, 12, 12, 0.877);
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) { /* Efeito zenbrado odd, even*/
+            background-color: rgba(128, 128, 128, 0.486);
+        }
+
+        .ano {
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -36,34 +57,279 @@
     <table>
         <caption>tabela composta</caption>
         <thead>
-            <th>Nomes</th>
-            <th>idade</th>
-            <th>ano</th>
+            <tr>
+                <th>Nomes</th>
+                <th>idade</th>
+                <th>ano</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
                 <td>felipe</td>
                 <td>25</td>
-                <td>1997</td>
+                <td class="ano">1997</td>
             </tr>
             <tr>
                 <td>alexia</td>
                 <td>20</td>
-                <td>2000</td>
+                <td class="ano">2000</td>
             </tr>
             <tr>
                 <td>victor</td>
                 <td>17</td>
-                <td>2002</td>
+                <td class="ano">2002</td>
             </tr>
             <tr>
                 <td>Monte</td>
                 <td>50</td>
+                <td class="ano">1987</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>32</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>22</td>
+                <td>1888</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>28</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>jose</td>
+                <td>50</td>
+                <td>1986</td>
+            </tr>
+            <tr>
+                <td>lilou</td>
+                <td>52</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>josefa</td>
+                <td>33</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>ramom</td>
+                <td>10</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>igor</td>
+                <td>12</td>
+                <td>1987</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>32</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>22</td>
+                <td>1888</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>28</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>jose</td>
+                <td>50</td>
+                <td>1986</td>
+            </tr>
+            <tr>
+                <td>lilou</td>
+                <td>52</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>josefa</td>
+                <td>33</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>ramom</td>
+                <td>10</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>igor</td>
+                <td>12</td>
+                <td>1987</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>32</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>22</td>
+                <td>1888</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>28</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>jose</td>
+                <td>50</td>
+                <td>1986</td>
+            </tr>
+            <tr>
+                <td>lilou</td>
+                <td>52</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>josefa</td>
+                <td>33</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>ramom</td>
+                <td>10</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>igor</td>
+                <td>12</td>
+                <td>1987</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>32</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>22</td>
+                <td>1888</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>28</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>jose</td>
+                <td>50</td>
+                <td>1986</td>
+            </tr>
+            <tr>
+                <td>lilou</td>
+                <td>52</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>josefa</td>
+                <td>33</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>ramom</td>
+                <td>10</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>igor</td>
+                <td>12</td>
+                <td>1987</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>32</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>22</td>
+                <td>1888</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>28</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>jose</td>
+                <td>50</td>
+                <td>1986</td>
+            </tr>
+            <tr>
+                <td>lilou</td>
+                <td>52</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>josefa</td>
+                <td>33</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>ramom</td>
+                <td>10</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>igor</td>
+                <td>12</td>
+                <td>1987</td>
+            </tr>
+            <tr>
+                <td>carlos</td>
+                <td>32</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>joao</td>
+                <td>22</td>
+                <td>1888</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>28</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>jose</td>
+                <td>50</td>
+                <td>1986</td>
+            </tr>
+            <tr>
+                <td>lilou</td>
+                <td>52</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>josefa</td>
+                <td>33</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>ramom</td>
+                <td>10</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td>igor</td>
+                <td>12</td>
                 <td>1987</td>
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <td colspan="2">Total em anos</td>
+                <td>9999</td>
+            </tr>
         </tfoot>
     </table>
 </body>
