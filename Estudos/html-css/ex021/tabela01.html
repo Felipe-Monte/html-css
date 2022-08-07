@@ -29,6 +29,10 @@
             background-color: rgba(0, 0, 0, 0.452);
             color: white;
         }
+
+        .cor3 {
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +40,13 @@
     <h1>Tabela desafio</h1>    
 
     <table>
+
+        <colgroup> <!-- selecionando colunas -->
+            <col class="cor1">
+            <col class="cor2">
+            <col class="cor3" span="2"> <!-- selecinando 2 colunas simultaneamente -->
+            <col class="cor4">
+        </colgroup>
 
         <caption>Notas e testes</caption>
 
