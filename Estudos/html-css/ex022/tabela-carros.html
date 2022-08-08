@@ -5,17 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela carros</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            padding: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        th , td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Tabela dos carros</h1>
 
-    <caption>Placas e renavam</caption>
     <table>
+        <caption>Placas e renavam</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
         <thead>
-            
+            <tr>
+                <th scope="col">Sócio</th>
+                <th scope="col">Placas</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Proprietário</th>
+                <th scope="col">Ano</th>
+            </tr>
         </thead>
         <tbody>
-
+            <tr>
+                <td>Adécio</td>
+                <td>NNM-7441</td>
+                <td>Fiat uno mille economy cinza</td>
+                <td>Tica</td>
+                <td>2011</td>
+            </tr>
+            <tr>
+                <td>Agnon - Lucas</td>
+                <td>OCV-6621</td>
+                <td>Toyota hillux cd 4/4 cinza</td>
+                <td>Ademar</td>
+                <td>2011</td>
+            </tr>
         </tbody>
         <tfoot>
 
