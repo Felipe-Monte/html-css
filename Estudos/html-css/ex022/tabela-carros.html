@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela carros</title>
     <style>
+        h1 {
+            text-align: center;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -17,105 +21,374 @@
         table {
             border-collapse: collapse;
             text-align: left;
+            min-width: 650px;
+            margin: auto;
+        }
+        
+        thead {
+            background-color: rgba(0, 0, 0, 0.37);
         }
 
-        th , td {
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(128, 128, 128, 0.356);
+        }
+
+        td {
             border: 1px solid black;
             padding: 5px;
         }
 
+        th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        div {
+            overflow: scroll;
+        }
     </style>
 </head>
 <body>
     <h1>Tabela dos carros</h1>
 
-    <table>
-        <caption>Placas e renavam</caption>
-        <colgroup>
-            <col>
-            <col>
-            <col>
-            <col>
-        </colgroup>
-        <thead>
-            <tr>
-                <th scope="col">SÓCIO</th>
-                <th scope="col">PLACAS</th>
-                <th scope="col">RENAVAM</th>
-                <th scope="col">DESCRIÇÃO</th>
-                <th scope="col">PROPRIETÁRIO</th>
-                <th scope="col">ANO</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Adécio</td>
-                <td>NNM-7441</td>
-                <td>280883137</td>
-                <td>Fiat uno mille economy cinza</td>
-                <td>Tica</td>
-                <td>2011</td>
-            </tr>
-            <tr>
-                <td>Abraão</td>
-                <td>OCV-6621</td>
-                <td>323999395</td>
-                <td>Toyota hillux cd 4/4 cinza</td>
-                <td>Ademar</td>
-                <td>2011</td>
-            </tr>
-            <tr>
-                <td>Agnon - Lucas</td>
-                <td>QPH-8E11</td>
-                <td>1168185430</td>
-                <td>Toyota hillux</td>
-                <td></td>
-                <td>2018</td>
-            </tr>
-            <tr>
-                <td>Agnon - reboque</td>
-                <td>QGP-2474</td>
-                <td>1156606052</td>
-                <td>Reboque</td>
-                <td>Agnon</td>
-                <td>2018</td>
-            </tr>
-            <tr>
-                <td>Agnon - derlan</td>
-                <td>QGJ-6432</td>
-                <td>1112945102</td>
-                <td>Fiat strada</td>
-                <td>Am monte</td>
-                <td>2017</td>
-            </tr>
-            <tr>
-                <td>Alvaro - francinaldo</td>
-                <td>QGY-8I47</td>
-                <td>1239197443</td>
-                <td>Fiat strada</td>
-                <td>Am monte</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <td>Batista - bento</td>
-                <td>QGQ-0848</td>
-                <td>1169461910</td>
-                <td>Fiat strada</td>
-                <td>-</td>
-                <td>2018</td>
-            </tr>
-            <tr>
-                <td>Batista - cicero</td>
-                <td>QGO-3443</td>
-                <td>1146846204</td>
-                <td>Fiat palio</td>
-                <td>Am monte</td>
-                <td>2016</td>
-            </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
-    </table>
+    <div>
+        <table>
+            <caption>Placas e renavam</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">SÓCIO</th>
+                    <th scope="col">PLACAS</th>
+                    <th scope="col">RENAVAM</th>
+                    <th scope="col">DESCRIÇÃO</th>
+                    <th scope="col">PROPRIETÁRIO</th>
+                    <th scope="col">ANO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adécio</td>
+                    <td>NNM-7441</td>
+                    <td>280883137</td>
+                    <td>Fiat uno mille</td>
+                    <td>Tica</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Abraão</td>
+                    <td>OCV-6621</td>
+                    <td>323999395</td>
+                    <td>Toyota hillux</td>
+                    <td>Ademar</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Agnon - Lucas</td>
+                    <td>QPH-8E11</td>
+                    <td>1168185430</td>
+                    <td>Toyota hillux</td>
+                    <td></td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Agnon - Reboque</td>
+                    <td>QGP-2474</td>
+                    <td>1156606052</td>
+                    <td>Reboque</td>
+                    <td>Agnon</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Agnon - Derlan</td>
+                    <td>QGJ-6432</td>
+                    <td>1112945102</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Alvaro - Francinaldo</td>
+                    <td>QGY-8I47</td>
+                    <td>1239197443</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Batista - Bento</td>
+                    <td>QGQ-0848</td>
+                    <td>1169461910</td>
+                    <td>Fiat strada</td>
+                    <td>-</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Batista - Cícero</td>
+                    <td>QGO-3443</td>
+                    <td>1146846204</td>
+                    <td>Fiat palio</td>
+                    <td>Am monte</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Batista - Itamar</td>
+                    <td>RGF-0C64</td>
+                    <td>1232823802</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Batista - Emanuel</td>
+                    <td>QGO-3453</td>
+                    <td>1088901821</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Batista - Rafael</td>
+                    <td>QGQ-3118</td>
+                    <td>1169462135</td>
+                    <td>Fiat strada</td>
+                    <td>-</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Batista</td>
+                    <td>OWF-4E89</td>
+                    <td>1026134410</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Lucas</td>
+                    <td>QGO-7454</td>
+                    <td>1156087594</td>
+                    <td>Nova saveiro</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Rafael Oliveira</td>
+                    <td>RGE-9I88</td>
+                    <td>1242639060</td>
+                    <td>Nova saveiro</td>
+                    <td>Am monte</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Claudionor</td>
+                    <td>OCY-9825</td>
+                    <td>335008828</td>
+                    <td>Toyota hillux</td>
+                    <td>Am monte</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Gilvaci</td>
+                    <td>QGE-9358</td>
+                    <td>1067138533</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2016</td>
+                </tr>
+                <tr>
+                    <td>Dário - Antônio</td>
+                    <td>QGK-0946</td>
+                    <td>1130214041</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Davi</td>
+                    <td>QGI-7956</td>
+                    <td>1127563499</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Empresa</td>
+                    <td>QGR-1844</td>
+                    <td>1159540621</td>
+                    <td>Ducato</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Eurico</td>
+                    <td>QGJ-7806</td>
+                    <td>1128971450</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Fábio</td>
+                    <td>QGY-8D28</td>
+                    <td>1217652709</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Francisco Alexandre</td>
+                    <td>QGD-8980</td>
+                    <td>1034474682</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Francisco f</td>
+                    <td>OWG-4G23</td>
+                    <td>1048158699</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Isaias</td>
+                    <td>NOF-4510</td>
+                    <td>404327338</td>
+                    <td>Fiat uno mille</td>
+                    <td>Zé bahia</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Isaias - Rodrigo</td>
+                    <td>QGM-4557</td>
+                    <td>1132298463</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Joacir</td>
+                    <td>QGN-7252</td>
+                    <td>1147218746</td>
+                    <td>Nova saveiro</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Jucelio</td>
+                    <td>QGY-3H39</td>
+                    <td>1216589035</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Luciery</td>
+                    <td>OCY-9975</td>
+                    <td>337055610</td>
+                    <td>Toyota hillux</td>
+                    <td>Lucimerio</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>Lucimerio</td>
+                    <td>QGW-3D39</td>
+                    <td>-</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Naldo</td>
+                    <td>QGN-7262</td>
+                    <td>1147219335</td>
+                    <td>Nova saveiro</td>
+                    <td>Am monte</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Ramires</td>
+                    <td>QGD-8990</td>
+                    <td>1147219335</td>
+                    <td>Nova saveiro</td>
+                    <td>Am monte</td>
+                    <td>2015</td>
+                </tr>
+                <tr>
+                    <td>Reserva</td>
+                    <td>NOB-2351</td>
+                    <td>452005779</td>
+                    <td>Fiat uno mille</td>
+                    <td>Am monte</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Reserva</td>
+                    <td>NOB-7931</td>
+                    <td>452451574</td>
+                    <td>Fiat uno mille</td>
+                    <td>Eleazar</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>Reserva</td>
+                    <td>OLV-4896</td>
+                    <td>594162122</td>
+                    <td>Toyota hillux</td>
+                    <td>Eurico</td>
+                    <td>2013</td>
+                </tr><tr>
+                    <td>Ricardo Alexandre</td>
+                    <td>OWA-0D72</td>
+                    <td>997578130</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>Romário</td>
+                    <td>RGF-0C54</td>
+                    <td>1232823624</td>
+                    <td>Fiat strada</td>
+                    <td>Am monte</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Zé bahia</td>
+                    <td>OWB-6C74</td>
+                    <td>1012057051</td>
+                    <td>Toyota Hillux</td>
+                    <td>Ademar</td>
+                    <td>2014</td>
+                </tr>
+                <tr>
+                    <td>Ademar</td>
+                    <td>RGN-5C19</td>
+                    <td>1176292401</td>
+                    <td>Amarok</td>
+                    <td>Am monte</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>Arleuda</td>
+                    <td>QLG-9005</td>
+                    <td>1117072417</td>
+                    <td>Renegade</td>
+                    <td>Am monte</td>
+                    <td>2017</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
