@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site teste</title>
+    <style>
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(150, 117, 182);
+        }
+
+        section {
+            background-color: white;
+            width: 311px;
+            height: 520px;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
+        }
+
+        input {
+            margin-top: 30px;
+            
+        }
+
+        div {
+            text-align: center;
+            
+        }
+
+        iframe {
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+
+    <script>
+
+        function clicar() {
+            var senha = document.getElementById('senha')
+            var res = document.getElementById('res')
+
+            if (senha.value == 0) {
+                alert('Campo em branco!')
+
+            } else if (senha.value != 'felipe') { 
+                alert('Usuario nao cadastrado!')
+
+            } else if (senha.value === 'felipe'){
+
+                alert('Acesso permitido')
+                res.innerHTML = `<p>Olá felipe</p>`
+                res.innerHTML += `<iframe src="https://erp.tecnicasoft.com.br/Login.aspx?ReturnUrl=%2f"></iframe>`
+            }
+
+        }
+
+    
+    </script>
+</head>
+<body>
+    <h1>Teste</h1>
+
+    <section>
+        <input type="text" name="senha" id="senha" placeholder="Digite aqui o seu login">
+        <input type="button" value="Entrar" onclick="clicar()">
+
+        <div id="res">
+            <p>[AQUI VAI O RESULTADO]</p>
+        </div>
+    </section>
+
+</body>
+</html>
