@@ -67,16 +67,27 @@
     </style>
     <script>
         function clicar() {
-        var link = document.getElementById('link')
-        window.prompt('Digite acesso');
+            var link = document.getElementById('link')
+            var acesso = window.prompt('Digite acesso');
+
+            if (acesso === 'cleuda10') {
+                alert('Bem vindo ' + acesso )
+                window.open('https://felipe-monte.github.io/Maquineta/', '_blank');
+                
+            } else {
+                alert('Acesso negado')
+            }
+
         }
+
+        
     </script>
 </head>
 <body>
 
     <h1>Escolha alguma das opções</h1>
     
-    <a id="link" onclick="clicar()" href="https://felipe-monte.github.io/Maquineta/" target="_blank">
+    <a id="link" onclick="clicar()">
         <section id="primeira-secao">
             <p>Maquineta</p>
         </section>
@@ -84,13 +95,13 @@
 
     <a href="#">
         <section id="segunda-secao">
-            <p>[AQUI VAI LINK]</p>
+            <p>[LINK VAZIO]</p>
         </section>
     </a>
 
     <a href="#">
         <section id="terceira-secao">
-            <p>[AQUI VAI LINK]</p>
+            <p>[lINK VAZIO]</p>
         </section>
     </a>
 
