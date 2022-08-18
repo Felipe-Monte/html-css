@@ -28,7 +28,7 @@
             cursor: pointer;
         }
 
-        #primeira-secao:hover {
+        #primeira-secao:active {
             background-color: gray;
         }
 
@@ -42,7 +42,7 @@
             cursor: pointer;
         }
 
-        #segunda-secao:hover {
+        #segunda-secao:active {
             background-color: gray;
         }
 
@@ -56,7 +56,7 @@
             cursor: pointer;
         }
 
-        #terceira-secao:hover {
+        #terceira-secao:active {
             background-color: gray;
         }
 
@@ -65,33 +65,34 @@
             text-decoration: none;
         }
     </style>
+    <script>
+        function clicar() {
+        var link = document.getElementById('link')
+        window.prompt('Digite acesso');
+        }
+    </script>
 </head>
 <body>
 
     <h1>Escolha alguma das opções</h1>
     
-    <img src="" alt=""> 
-    
-    <a href="#">
+    <a id="link" onclick="clicar()" href="https://felipe-monte.github.io/Maquineta/" target="_blank">
         <section id="primeira-secao">
-            <p>[AQUI VAI LINK DO WHATS]</p>
+            <p>Maquineta</p>
         </section>
     </a>
 
     <a href="#">
         <section id="segunda-secao">
-            <p>[AQUI VAI LINK DO TELEGRAM]</p>
+            <p>[AQUI VAI LINK]</p>
         </section>
     </a>
 
     <a href="#">
         <section id="terceira-secao">
-            <p>[AQUI VAI LINK DO FACEBOOK]</p>
+            <p>[AQUI VAI LINK]</p>
         </section>
     </a>
 
 </body>
-<footer>
-
-</footer>
 </html>
