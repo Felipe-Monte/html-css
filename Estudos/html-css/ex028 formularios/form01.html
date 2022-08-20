@@ -10,11 +10,20 @@
     <h1>Meu formulário</h1>
 
     <form action="cadastro.php" method="post" autocomplete="on">
-        <p><label for="nome">Nome:</label> 
-            <input type="text" name="nome" id="nome" autocomplete="username" maxlength="20" size="10"></p>
-        <p><label for="sobrenome">Senha:</label>
-            <input type="password" name="sobrenome" id="sobrenome" autocomplete="current-password" maxlength="8" size="10"></p>
-        <p><input type="submit" value="Enviar"></p>
+
+        <p>
+            <label for="nome">Nome:</label> 
+            <input type="text" name="nome" id="nome" autocomplete="username" maxlength="20" size="10" required placeholder="Digite um nome">
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" autocomplete="current-password" maxlength="8" size="10" required placeholder="8 digitos">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
     </form>
 </body>
 </html>
