@@ -9,21 +9,31 @@
 <body>
     <h1>Meu formulário</h1>
 
-    <form action="cadastro.php" method="post" autocomplete="on">
-
-        <p>
-            <label for="nome">Nome:</label> 
-            <input type="text" name="nome" id="nome" autocomplete="username" maxlength="20" size="10" required placeholder="Digite um nome">
-        </p>
-        <p>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" autocomplete="current-password" maxlength="8" size="10" required placeholder="8 digitos">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados do usuário</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autocomplete="username" maxlength="20" size="10" required placeholder="Digite um nome">
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" autocomplete="current-password" maxlength="8" size="10" required placeholder="8 digitos">
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <input type="checkbox" name="sexo" id="imas" value="M">Masculino <br>
+                    <input type="checkbox" name="sexo" id="ifem" value="F">Feminino <br>
+                </fieldset>
+            </p>
+                <input type="checkbox" name="sexo" id="ioutro" required>Confima que marcou a caixa acimar ?<br>
+            
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
