@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Formulário teste</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado">
+
+                    <option value="" selected>-- Escolha --</option>
+                <optgroup label="Opcão 1">
+                    <option value="RN">Rio grande do norte</option>
+                    <option value="SP" >São paulo</option>
+                </optgroup>
+
+                <optgroup label="Opção 2">
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="PE">Pernanbuco</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="itext">Digite sua profissão:</label>
+            <input type="text" name="text" id="itext" list="lista">
+            <datalist id="lista">
+                <option>Dentista</option>
+                <option>Vendedor</option>
+                <option>Progamador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="itexto">Digite:</label><br>
+           <textarea name="texto" id="itexto" cols="30" rows="10" placeholder="Sua mensagem" style="resize: none"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
