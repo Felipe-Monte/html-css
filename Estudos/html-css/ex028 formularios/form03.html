@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+     <p>
+         <label for="in1">Valor 1:</label>
+             <input type="number" name="n1" id="in1" oninput="numero.innerHTML = Number(in1.value) + Number(in2.value)">
+     </p>
+
+     <p>
+         <label for="in2">Valor 2:</label>
+         <input type="number" name="n2" id="in2" oninput="numero.innerHTML = Number(in1.value) + Number(in2.value)">
+     </p>
+
+     <label for="numero">Saida:</label>
+     <output name="soma" id="numero"></output>
+</body>
+</html>
