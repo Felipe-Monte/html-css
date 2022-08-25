@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: left;
+}
+
+main {
+    width: 100%;
+    line-height: 2em;
+}
+
+footer {
+    display: none;
+}

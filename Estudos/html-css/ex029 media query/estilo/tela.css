@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+}
