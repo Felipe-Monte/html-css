@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: aqua;
+    width: 400px;
+    margin: auto;
+    padding: 5px;
+}
+
+#itexto , #isenha {
+    text-align: center;
+    padding: 5px;
+}
+
+.caixa {
+    text-align: center;
+}
+
+#ilista {
+    text-align: center;
+}
