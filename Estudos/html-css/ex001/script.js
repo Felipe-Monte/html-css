@@ -9,6 +9,6 @@ function entrar() {
         location.href = 'prototipo02.html'
 
     } else {
-        alert('login invalido')
+        alert('Campo vazio !')
     }
 }
