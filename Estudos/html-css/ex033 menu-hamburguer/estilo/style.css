@@ -69,18 +69,18 @@ menu a:hover {
 }
 
 main {
-    width: 90vw;
+    width: 85vw;
     margin: auto;
     margin-top: 15px;
     background-color: white;
     text-align: justify;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.479);
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.479);
     
 }
 
 main p {
-    text-indent: 10px;
+    text-indent: 15px;
     padding: 8px;
 }
