@@ -5,66 +5,60 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
- }
-
-html , body {
-    background-color: rgba(204, 200, 200, 0.808);
 }
 
-header {
+body {
+    background-color: rgba(236, 236, 236, 0.644);
+}
+
+header > h1 {
+    margin-top: 10px;
     text-align: center;
-    background-color: rgba(163, 162, 162, 0.726);
-    padding: -2px;
 }
 
-h1 {
-    padding: 20px;
+menu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    
 }
 
-ul {
+menu ul {
     list-style-type: none;
-    text-align: center;
 }
 
-li {
-    padding: 1px;
-}
-
-a:hover {
-    background-color: rgba(255, 255, 255, 0.521);
-    color: black;
-}
-
-a {
+menu li {
     background-color: gray;
+    margin: 1px;
+    padding: 10px;
+}
+
+menu li:hover {
+    background-color: rgb(185, 184, 184);
+
+}
+
+menu a {
     text-decoration: none;
-    display: block;
-    padding: 8px;
+    width: 0px;
     color: white;
 }
 
+menu a:hover {
+    color: black;
+}
+
 main {
-    width: 90vw;
-    margin: 10px auto;
-    text-align: justify;
+    width: 400px;
+    margin: auto;
     background-color: white;
-    padding: 10px;
+    text-align: justify;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.356);
 }
 
-p {
-    padding: 5px;
-    line-height: 1.5em;
-    text-indent: 30px;
-}
-
-@media screen and (min-width: 800px){
-    menu {
-        display: none;
-    }
-
-    main {
-        width: 750px;
-    }
+main p {
+    text-indent: 10px;
+    padding: 8px;
 }
