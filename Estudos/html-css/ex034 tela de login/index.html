@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        section {
+            background-color: #9E91C5;
+            text-align: center;
+            width: 250px;
+            height: 450px;
+            padding: 10px;
+            position: absolute;
+            border-radius: 30px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.514);
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+
+        form {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+
+        #iemail {
+            padding: 5px;
+        }
+
+        #isenha {
+            padding: 5px;
+        }
+
+        #ibotao {
+            padding: 2px;
+            width: 183px;
+        }
+    </style>
+</head>
+<body>
+    <section id="celular">
+        <form>
+            <input type="email" name="email" id="iemail" placeholder="Username" autocomplete="none"><br>
+            <input type="password" name="senha" id="isenha" placeholder="Password"><br>
+            <input type="button" value="Login" id="ibotao" autocomplete="none">
+        </form>
+    </section>
+</body>
+</html>
