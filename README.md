@@ -1,2 +1,2 @@
 # html-css
- html-css praticando e estudando !
+ html-css praticando e estudando desenvolvimento web...
