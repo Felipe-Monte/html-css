@@ -25,29 +25,54 @@
 
         #container {
             display: block;
-            width: 850px;
-            height: 500px;
+            width: 810px;
+            height: 665px;
             margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.219);
         }
 
-        .box {
+        .caixa {
             display: table;
+            width: 250px;
+            height: 250px;
+            float: left;
+        }
+
+        .box {
+            display: block;
             width: 250px;
             height: 250px;
             background-color: coral;
             margin: 10px;
+            margin-bottom: 2px;
+            border: 2px solid black;
             float: left;
+            box-sizing: border-box;
+        }
+
+        .box:hover {
+            background-color: crimson;
         }
 
         .btn {
+            display: block;
             width: 250px;
             height: 50px;
+            margin: 10px;
+            float: left;
             background-color: blueviolet;
-            
+            border: 2px solid black;
+            box-sizing: border-box;
         }
+
+        .btn:hover {
+            background-color: white;
+        }
+        
     </style>
 </head>
 
@@ -57,14 +82,35 @@
     </header>
     <main id="container">
 
-        <div class="box"></div>
-        <div class="btn"></div>
+        <div class="caixa">
+            <div class="box"></div>
+            <div class="btn"></div>
+        </div>
 
-        <div class="box"></div>
-        <div class="btn"></div>
+        <div class="caixa">
+            <div class="box"></div>
+            <div class="btn"></div>
+        </div>
 
-        <div class="box"></div>
-        <div class="btn"></div>
+        <div class="caixa">
+            <div class="box"></div>
+            <div class="btn"></div>
+        </div>
+
+        <div class="caixa">
+            <div class="box"></div>
+            <div class="btn"></div>
+        </div>
+
+        <div class="caixa">
+            <div class="box"></div>
+            <div class="btn"></div>
+        </div>
+
+        <div class="caixa">
+            <div class="box"></div>
+            <div class="btn"></div>
+        </div>
 
     </main>
 </body>
