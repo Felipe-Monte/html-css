@@ -10,18 +10,28 @@
         * {
             margin: 0;
             padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
             background-color: rgba(128, 128, 128, 0.514);
         }
 
+        main#conteudo {
+            display: table;
+            width: 841px;
+            margin: 10px auto;
+            
+        }
+
         #container {
             display: table;
             background-color: white;
             width: 250px;
-            margin: 25px auto;
+            margin: 10px;
             border-radius: 10px;
+            float: left;
+            
         }
 
         #card {
@@ -32,42 +42,82 @@
         }
 
         #card img {
-            margin-top: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin: 10px;
             border-radius: 10px;
         }
 
         #info h1 {
+            font-size: 1.5em;
             text-align: center;
-            margin: 5px;
+            margin: 0px 10px 10px 10px;
         }
 
         #info p {
-            text-align: center;
-            margin: 5px;
+            text-align: left;
+            text-align: justify;
+            line-height: 1.2em;
+            margin: 10px;
         }
 
         #botao {
+            font-family: Arial, Helvetica, sans-serif;
             display: block;
-            margin: 10px auto 10px auto;
-            width: 150px;
+            background-color: #31C18E;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+            color: white;
+            margin: 10px;
+            width: 240px;
             padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-transform: uppercase;
+        }
+
+        /*Media screen para smartphones*/
+        @media screen and (orientation: portrait) {
+
+            main#conteudo {
+                width: 50vw;
+                margin: auto;
+            }
+
+            #container {
+                float: none;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="container">
-        <div id="card">
-            <img src="images/gato-01.jpg" alt="gatinho">
-            <div id="info">
-                <h1>Felipe</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sapiente.</p>
-                <input type="button" value="Enviar" id="botao">
+    <main id="conteudo">
+        <div id="container">
+            <div id="card">
+                <img src="images/gato-01.jpg" alt="gatinho">
+                <div id="info">
+                    <h1>Aqui vai o titulo</h1>
+                </div>
             </div>
         </div>
-    </div>
+        <div id="container">
+            <div id="card">
+                <img src="images/gato-02.jpg" alt="gatinho">
+                <div id="info">
+                    <h1>Aqui vai o titulo</h1>
+                    <input type="button" value="Meu botão" id="botao">
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="card">
+                <img src="images/gato-03.jpg" alt="gatinho">
+                <div id="info">
+                    <h1>Aqui vai o titulo</h1>
+                    <p>Testando a escrita dentro do card de exemplo. Gatinha deitada.</p>
+                    <input type="button" value="Meu botão" id="botao">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
