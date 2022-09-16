@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+header {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+header li {
+    display: inline-block;
+}
+
+#banner {
+    width: 100%;
+    height: 200px;
+    margin: 10px auto;
+    background-color: aliceblue;
+}
+
+body {
+    background-color: gainsboro;
+} 
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    background-color: white;
+}
+
+
+div.img {
+    width: 163px;
+    height: 150px;
+    margin: 1px;
+    background-color: dimgrey;
+    
+}
