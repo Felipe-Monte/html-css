@@ -1,0 +1,26 @@
+
+@keyframes nextColor {
+    from {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        background-color: blue;
+    }
+    to {
+        width: 400px;
+        height: 50px;
+        background-color: red;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color: blue;
+    animation: nextColor 5s infinite;
+}
