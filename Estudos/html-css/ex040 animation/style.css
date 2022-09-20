@@ -1,0 +1,30 @@
+@charset "URF-8";
+@import 'animate.css';
+
+h1 {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+}
+
+h1:hover {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+
+    animation: swing infinite;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+h1:active {
+    display: block;
+    text-align: center;
+    margin: 50px auto;
+
+    animation: bounce infinite;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
