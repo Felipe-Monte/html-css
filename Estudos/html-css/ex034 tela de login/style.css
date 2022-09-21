@@ -17,7 +17,7 @@ section.container {
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438);
-    transition: width .8s , height .8s;
+    transition: width .5s , height .8s;
 }
 
 div.bloco1 {
