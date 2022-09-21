@@ -1,31 +1,51 @@
+* {
+    margin: 0;
+}
 
 body {
     background-color: rgb(187, 184, 184);
 }
 
-section {
-    display: block;
-    width: 300px;
-    height: 450px;
+section.container {
+    display: table;
+    width: 250px;
+    height: 480px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438);
 }
 
-.div1 {
-    width: 300px;
+div.bloco1 {
+    background: url(imagens/pexels-energepiccom-174938.jpg) no-repeat;
+    background-size: cover;
+}
+.bloco1 {
+    width: 240px;
+    margin: 10px;
     height: 225px;
+    padding: 10px;
     background-color: coral;
     border-radius: 10px;
 }
 
-.div2 {
-    width: 300px;
+.bloco2 {
+    width: 240px;
+    margin: 10px;
     height: 225px;
+    padding: 10px;
     text-align: center;
     background-color: coral;
     border-radius: 10px;
+}
+
+.cabecalho {
+    margin: 10px;
+}
+
+.corpo {
+    padding: 20px;
 }
