@@ -1,0 +1,31 @@
+
+body {
+    background-color: rgb(187, 184, 184);
+}
+
+section {
+    display: block;
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.div1 {
+    width: 300px;
+    height: 225px;
+    background-color: coral;
+    border-radius: 10px;
+}
+
+.div2 {
+    width: 300px;
+    height: 225px;
+    text-align: center;
+    background-color: coral;
+    border-radius: 10px;
+}
