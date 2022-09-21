@@ -6,7 +6,7 @@
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV. */
 
-@media screen and (min-width: 550px){
+@media screen and (min-width: 550px) {
     section.container {
         display: flex;
         width: 550px;
