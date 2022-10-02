@@ -6,11 +6,12 @@
 
  body {
      height: 89vh;
-     background-image: linear-gradient(to bottom, #863dbb, indigo);
+     background-image: linear-gradient(to bottom, indigo, rgb(101, 24, 156), rgb(110, 37, 161));
      background-attachment: fixed;
  }
 
  h1 {
+     color: white;
      text-align: center;
      text-transform: uppercase;
      margin: 100px 0px 0px 0px;
@@ -31,22 +32,28 @@
      width: 530px;
      height: auto;
      border-radius: 10px;
-     box-shadow: 2px 2px 8px rgba(255, 254, 254, 0.575);
+     box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.699);
      background-color: transparent;
  }
 
  .box {
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      width: 150px;
      height: 150px;
      margin: 10px;
      background-color: black;
+     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.527);
      border-radius: 10px;
  }
 
+ span.horas {
+    font-size: 2em;
+ }
+
  span {
-     font-size: 2em;
+     font-size: 1em;
      color: white;
  }

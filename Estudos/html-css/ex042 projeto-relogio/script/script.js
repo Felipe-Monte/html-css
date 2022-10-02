@@ -13,7 +13,7 @@ var relogio = setInterval(function time() {
     if (minutes < 10) minutes = '0' + minutes;
     if (seconds < 10) seconds = '0' + seconds;
 
-    box.querySelector('span').textContent = hora
+    box.querySelector('span').textContent =  hora
     box2.querySelector('span').textContent = minutes
     box3.querySelector('span').textContent = seconds
 
